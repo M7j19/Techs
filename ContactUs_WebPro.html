@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page with Dark Green Sidebar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #006400; /* Dark Green Background */
+            color: white;
+            height: 100vh; /* Extend sidebar to the end of the viewport */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Style the sidebar links */
+        #sidebar a {
+            display: block;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /* Style the sidebar links on hover */
+        #sidebar a:hover {
+            background-color: #004d00; /* Darker Green on Hover */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <a href="Mainpage_Webpro.html">Home</a>
+        <a href="AboutUs_WebPro.html">About us</a>
+        <a href="Categories_WebPro.html">Categories</a>
+        <a href="ContactUs_WebPro.html">Contact us</a>
+        
+    </div>
+
+    <div id="content">
+       <h1>Contact Us</h1>
+    <p>Feel free to get in touch with us using the contact details below:</p>
+
+    <h2>Contact Information</h2>
+    <ul>
+        <li>Email: <a href="mailto:U17200267@sharjah.ac.ae">U17200267@sharjah.ac.ae</a></li>
+        <li>Phone: +971</li>
+        <li>Address: University of Sharjah, United Arab Emirates</li>
+    </ul>
+ 
+    <h2>Contact Form</h2>
+<form action="confirmation.html" method="post">
+    <form action="process_contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Message label above the textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </div>
+</body>
+</html>
